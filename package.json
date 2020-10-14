@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "test": "*",
-    "pm2": "pm2 start src/app.js --watch"
+    "pm2": "pm2 start src/index.js --watch"
   },
   "repository": {
     "type": "git",
