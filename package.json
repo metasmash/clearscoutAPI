@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "nodemon src/index.js",
     "test": "*",
     "pm2": "pm2 start src/index.js --watch",
     "remote-pull": "ssh update-clearscout"
