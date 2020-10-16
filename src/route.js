@@ -1,4 +1,5 @@
 module.exports = {
-    MAIN:'/',
-    USER:'/status'
+    MAIN: '/',
+    USER: '/status',
+    POUBELLES: '/poubelles',
 }
