@@ -13,10 +13,15 @@ app.get(ROUTE.POUBELLES, (req, res, err) => {
     res.json(POUBELLES)
 })
 
-app.get('/poubelles/:id', (req, res, err) => {
+app.get(ROUTE.POUBELLE, (req, res, err) => {
     const { id } = req.params
-    const poubelle = _.find(POUBELLES, (o) => {
-        return o.id === parseInt(id)
-    })
+    const poubelle = _.find(POUBELLES, (o) => o.id === parseInt(id))
     res.json(poubelle)
+})
+
+app.post(ROUTE.POUBELLE_PROCHE, async (req, res, err) => {
+    console.log('post request called')
+    const information = await req.body
+    console.log(information)
+    res.json({ status: 0 })
 })
